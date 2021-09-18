@@ -70,7 +70,7 @@ print("Converted Array: \(map(numbers: numbers) { $0 * 2 })")
 let array = ["igi","209098","ABBA", "AKKA","ABBA", "AKKA", "1010"]
 
 print("\n\n                                       Palindoms in Array -> \n")
-func palindoms(words: [String]){
+func palindroms(words: [String]){
     var pals = [String]()
     for word in words{
             
@@ -107,4 +107,4 @@ func palindoms(words: [String]){
 }
 
 
-palindoms(words:array)
+palindroms(words:array)
