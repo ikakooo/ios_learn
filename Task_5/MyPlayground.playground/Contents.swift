@@ -108,7 +108,11 @@ maxNegativeScored[0].printTeamData // გუნდი რომელსაც �
 
 print("\n\n\n იპოვეთ გუნდი, რომელსაც პირველ დივიზიონში საუკეთესო ბურთების შეფარდება აქვს")
 
+// ჩეინინგით ერთმანეთსზე დაყრილი რთულად წასაკითხი მაგრამ მუშა კოდი
+teamsArray.filter{$0._division == divisions.division1}.sorted{$0._GoalsDifference.positiveScored / $0._GoalsDifference.negativeScored > $1._GoalsDifference.positiveScored / $1._GoalsDifference.negativeScored}[0].printTeamData
 
+
+// უფრო მეტად გასაგები რომ ყოფილიყო ->
 var firstDivisionTeams = teamsArray.filter{$0._division == divisions.division1}
 
 
