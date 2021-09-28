@@ -1,13 +1,13 @@
 //
-//  Task_6UITests.swift
-//  Task_6UITests
+//  Task_7UITests.swift
+//  Task_7UITests
 //
-//  Created by MacBook Pro on 24.09.21.
+//  Created by MacBook Pro on 27.09.21.
 //
 
 import XCTest
 
-class Task_6UITests: XCTestCase {
+class Task_7UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,14 +26,7 @@ class Task_6UITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-        app.textFields["Enter some text here"].tap()
-        app.staticTexts["Your text should appear here"].tap()
-        app.sliders["29%"].swipeRight()
-        app/*@START_MENU_TOKEN@*/.staticTexts["After clicking on this button"]/*[[".buttons[\"After clicking on this button\"].staticTexts[\"After clicking on this button\"]",".staticTexts[\"After clicking on this button\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        
 
-        let tooShortPasswordMessage = app.staticTexts["ikakooo"]
-        XCTAssertEqual(tooShortPasswordMessage.label, "ikakooo")
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

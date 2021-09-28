@@ -14,15 +14,17 @@ class ViewController: UIViewController {
     
 
     @IBAction func OnButtonClick(_ sender: UIButton) {
-        let textFrominput = TextInputFild.text
+        
         
         
         /// თუ ლაბელი გასუფთავდება ისევ ძველი ტექსტი რომ დაბრუნდეს ბათონზე კლიკის შემდეგ
+        if let textFrominput = TextInputFild.text {
+            
         if  textFrominput != "" {
             textShowLabel.text = textFrominput
         } else {
             textShowLabel.text = "Your text should appear here"
-        }
+        }}
         
     }
     
