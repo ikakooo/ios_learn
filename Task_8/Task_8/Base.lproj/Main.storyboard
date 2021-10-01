@@ -273,14 +273,14 @@
             <objects>
                 <viewController id="edT-Gr-sdG" customClass="HistoryViewController" customModule="Task_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ck4-vb-Q1P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBd-Ba-xDQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1165"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Tv-9p-TMm">
-                                        <rect key="frame" x="0.0" y="0.0" width="418" height="1203"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="418" height="1953"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HjC-sa-fqt">
                                                 <rect key="frame" x="0.0" y="0.0" width="418" height="1203"/>
@@ -309,6 +309,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="rjz-ul-nlf"/>
+                    <size key="freeformSize" width="414" height="2000"/>
                     <connections>
                         <outlet property="listOfHistorystackView" destination="HjC-sa-fqt" id="cyg-SG-cIn"/>
                     </connections>
