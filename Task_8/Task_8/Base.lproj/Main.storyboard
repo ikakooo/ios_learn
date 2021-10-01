@@ -20,10 +20,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-yZ-V1M" userLabel="Main Stack View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="poC-rL-bYW" userLabel="Result History">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poC-rL-bYW" userLabel="Result History">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="145.33333333333334"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-mp-kCw" userLabel="Result">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-mp-kCw" userLabel="Result">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="145.33333333333334"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="35"/>
@@ -45,7 +45,7 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="2aj-mp-kCw" firstAttribute="width" secondItem="31S-5v-x68" secondAttribute="width" multiplier="6" id="fm4-j3-pBC"/>
+                                            <constraint firstItem="2aj-mp-kCw" firstAttribute="width" secondItem="31S-5v-x68" secondAttribute="width" multiplier="6" id="5uB-Jo-L9Y"/>
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lha-wU-mnL" userLabel="Result">
@@ -268,34 +268,50 @@
             </objects>
             <point key="canvasLocation" x="18.399999999999999" y="97.536945812807886"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="Spv-tG-hUF">
             <objects>
-                <viewController id="edT-Gr-sdG" sceneMemberID="viewController">
+                <viewController id="edT-Gr-sdG" customClass="HistoryViewController" customModule="Task_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ck4-vb-Q1P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBd-Ba-xDQ">
-                                <rect key="frame" x="-6" y="0.0" width="420" height="1165"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1165"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tPa-fa-QwU">
-                                        <rect key="frame" x="8" y="0.0" width="412" height="1192"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Tv-9p-TMm">
+                                        <rect key="frame" x="0.0" y="0.0" width="418" height="1203"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HjC-sa-fqt">
+                                                <rect key="frame" x="0.0" y="0.0" width="418" height="1203"/>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="HjC-sa-fqt" secondAttribute="bottom" id="Id8-qO-4Av"/>
+                                            <constraint firstItem="HjC-sa-fqt" firstAttribute="top" secondItem="5Tv-9p-TMm" secondAttribute="top" id="JEt-hh-WbQ"/>
+                                            <constraint firstItem="HjC-sa-fqt" firstAttribute="leading" secondItem="5Tv-9p-TMm" secondAttribute="leading" id="go5-7z-B61"/>
+                                            <constraint firstAttribute="trailing" secondItem="HjC-sa-fqt" secondAttribute="trailing" id="jJC-1Q-QBm"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Tv-9p-TMm" firstAttribute="width" secondItem="hBd-Ba-xDQ" secondAttribute="width" id="4rJ-Mg-JYR"/>
+                                    <constraint firstItem="5Tv-9p-TMm" firstAttribute="top" secondItem="hBd-Ba-xDQ" secondAttribute="top" id="7IX-rr-84v"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Tv-9p-TMm" secondAttribute="trailing" id="9tK-YR-4J0"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Tv-9p-TMm" secondAttribute="bottom" id="XC2-oU-Sgy"/>
+                                    <constraint firstItem="5Tv-9p-TMm" firstAttribute="height" secondItem="hBd-Ba-xDQ" secondAttribute="height" id="kgi-A7-8cn"/>
+                                    <constraint firstItem="5Tv-9p-TMm" firstAttribute="leading" secondItem="hBd-Ba-xDQ" secondAttribute="leading" id="uF8-f7-dt4"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lm5-BO-DoK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="hBd-Ba-xDQ" firstAttribute="top" secondItem="Lm5-BO-DoK" secondAttribute="top" id="2HC-AB-ND5"/>
-                            <constraint firstItem="hBd-Ba-xDQ" firstAttribute="leading" secondItem="ck4-vb-Q1P" secondAttribute="leading" id="ScF-h4-fXI"/>
-                            <constraint firstItem="hBd-Ba-xDQ" firstAttribute="trailing" secondItem="Lm5-BO-DoK" secondAttribute="trailing" id="T66-Tk-yhQ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rjz-ul-nlf"/>
+                    <connections>
+                        <outlet property="listOfHistorystackView" destination="HjC-sa-fqt" id="cyg-SG-cIn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Rr-KT-svX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

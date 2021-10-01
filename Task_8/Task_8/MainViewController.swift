@@ -30,12 +30,22 @@ class MainViewController: UIViewController {
     
     var mathHistory = [String]()
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewControler =   segue.destination as? HistoryViewController
+        viewControler?.SetMathHistory = mathHistory
+    print("task 3")
+        
+    
+        print(mathHistory)
+    }
+   
+    
     
     
     @IBAction func OpenCalculationHisoryPage(_ sender: UIButton) {
-        
+        print("task 1")
         performSegue(withIdentifier: "goHistoryPage", sender: nil)
-        
+        print("task 2")
     }
     
     
