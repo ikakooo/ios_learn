@@ -35,13 +35,14 @@ class SecondViewController: UIViewController {
 }
 
 
-protocol MainViewControllerDelegate: SecondViewController {
+protocol MainViewControllerDelegate: AnyObject {
     func staticText(Text: String)
 }
 
 extension SecondViewController : MainViewControllerDelegate {
     func staticText(Text: String){
         inputedText.text = Text
+        print(Text+"0")
     }
 
 }

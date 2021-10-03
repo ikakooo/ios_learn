@@ -19,8 +19,9 @@ class MainViewController: UIViewController {
     var delegateFromSecondViewController: MainViewControllerDelegate?
     
     @IBAction func openSecondPage(_ sender: UIButton) {
-        print(showText.text)
-        delegateFromSecondViewController?.staticText(Text: showText.text ?? "")
+        print((showText.text ?? "ika"))
+        print((showText.text ?? "ika"))
+        delegateFromSecondViewController?.staticText(Text: showText.text ?? "ika2")
 //        performSegue(withIdentifier: "SecondViewController", sender: nil)
     }
     
@@ -32,13 +33,14 @@ class MainViewController: UIViewController {
 
 }
 
-protocol SecondViewControllerDelegate: MainViewController {
+protocol SecondViewControllerDelegate: AnyObject {
     func inputed(Text: String)
 }
 
 extension MainViewController : SecondViewControllerDelegate {
     func inputed(Text: String){
         showText.text = Text
+        print(Text+"1")
     }
     
 }

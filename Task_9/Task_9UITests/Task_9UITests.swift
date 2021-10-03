@@ -22,13 +22,30 @@ class Task_9UITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testPassingDataBetweenPagesCorrectly() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // main page must be visible "Main Page" text
+        let mainPageTextField = app.staticTexts["Main Page"]
+        XCTAssertTrue(mainPageTextField.waitForExistence(timeout: 5.0))
+        
+        // go to second page
+        app/*@START_MENU_TOKEN@*/.staticTexts[" Go To Next Page"]/*[[".buttons[\" Go To Next Page\"].staticTexts[\" Go To Next Page\"]",".staticTexts[\" Go To Next Page\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        // tipe the text in text fild
+        let textField = app.textFields["ჩაწერე ტექსტი რომ გამოჩნდეს მეორე გვერდზე"]
+        XCTAssertTrue(textField.waitForExistence(timeout: 5.0))
+        textField.tap()
+        textField.typeText("UI Test")
+        
+        // back to start page
+        app.buttons[" Go To Back"].tap()
+        
+        
+        
+        let updatedmainPageTextField = app.staticTexts["UI Test"]
+        XCTAssertTrue(updatedmainPageTextField.waitForExistence(timeout: 5.0))
     }
 
     func testLaunchPerformance() throws {
