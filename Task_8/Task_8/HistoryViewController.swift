@@ -28,7 +28,7 @@ class HistoryViewController: UIViewController {
                 let textLabel = UILabel()
                 textLabel.backgroundColor = UIColor.yellow
                 textLabel.widthAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true
-                textLabel.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
+                textLabel.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
                 textLabel.text  = it
                 textLabel.textAlignment = .center
                 
