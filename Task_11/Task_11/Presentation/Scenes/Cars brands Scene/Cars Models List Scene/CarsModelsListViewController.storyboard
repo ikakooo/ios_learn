@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cars Models List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CarsModelsListViewController" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="CarsModelsListViewController" customModule="Task_11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zfp-LO-VIn">
+                                <rect key="frame" x="0.0" y="90.5" width="414" height="771.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CarModelsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarModelsTableViewCell" id="rdF-su-w9S" customClass="CarModelsTableViewCell" customModule="Task_11" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rdF-su-w9S" id="0Ow-Dc-mUc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0i-2W-g76">
+                                                    <rect key="frame" x="20" y="11" width="374" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="u0i-2W-g76" firstAttribute="top" secondItem="0Ow-Dc-mUc" secondAttribute="topMargin" id="FwP-o4-JJd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="u0i-2W-g76" secondAttribute="bottom" id="Gc4-Eb-Q2Z"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="u0i-2W-g76" secondAttribute="trailing" id="Zjg-Bf-rca"/>
+                                                <constraint firstItem="u0i-2W-g76" firstAttribute="leading" secondItem="0Ow-Dc-mUc" secondAttribute="leadingMargin" id="v97-rB-i1C"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="carModelName" destination="u0i-2W-g76" id="QRW-Gl-dUg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmf-VO-Sm4">
+                                <rect key="frame" x="0.0" y="44" width="95" height="46.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title=" Back">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.82597479630000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onBackPresed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X64-2r-ca8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wp-15-hyJ">
+                                <rect key="frame" x="169.5" y="44" width="75.5" height="46.5"/>
+                                <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zfp-LO-VIn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9iF-C6-Lky"/>
+                            <constraint firstItem="Zmf-VO-Sm4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ERs-2L-HWD"/>
+                            <constraint firstItem="Zfp-LO-VIn" firstAttribute="top" secondItem="Zmf-VO-Sm4" secondAttribute="bottom" id="Uig-Ug-bEC"/>
+                            <constraint firstItem="Zfp-LO-VIn" firstAttribute="top" secondItem="8Wp-15-hyJ" secondAttribute="bottom" id="obC-KV-2WU"/>
+                            <constraint firstItem="8Wp-15-hyJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="oi3-M1-vEt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Zfp-LO-VIn" secondAttribute="trailing" id="omu-tc-d6j"/>
+                            <constraint firstItem="Zmf-VO-Sm4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qtY-F4-YtV"/>
+                            <constraint firstItem="8Wp-15-hyJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="uD7-LZ-CWL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Zfp-LO-VIn" secondAttribute="bottom" id="x0I-If-d2Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brandName" destination="8Wp-15-hyJ" id="vQP-Hv-SNi"/>
+                        <outlet property="carsModeTableView" destination="Zfp-LO-VIn" id="3ce-v1-KLT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
