@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsBarViewController" id="Y6W-OH-hqX" customClass="SettingsBarViewController" customModule="Task_12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5c0-N5-rle" userLabel="User Settings Table View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" id="Xif-GU-Pes" userLabel="Settings parameter Table View Cell" customClass="SettingsTableViewCell" customModule="Task_12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="46.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xif-GU-Pes" id="Dgc-Ab-Pxs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="46.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNM-Fk-dN4">
+                                                    <rect key="frame" x="20" y="11" width="374" height="24.5"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-BoldItalic" family="Rockwell" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rNM-Fk-dN4" secondAttribute="bottom" id="MBA-ih-O96"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rNM-Fk-dN4" secondAttribute="trailing" id="cbT-rD-kah"/>
+                                                <constraint firstItem="rNM-Fk-dN4" firstAttribute="leading" secondItem="Dgc-Ab-Pxs" secondAttribute="leadingMargin" id="lcU-Im-DgK"/>
+                                                <constraint firstItem="rNM-Fk-dN4" firstAttribute="top" secondItem="Dgc-Ab-Pxs" secondAttribute="topMargin" id="wah-YF-IDw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="credentialsTextLabel" destination="rNM-Fk-dN4" id="e3L-xM-UR3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCQ-Rf-wfO">
+                                <rect key="frame" x="24" y="758" width="366" height="55"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.82597479630000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <fontDescription key="titleFontDescription" name="Menlo-BoldItalic" family="Menlo" pointSize="35"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutUser:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OXb-q9-l3g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aCQ-Rf-wfO" secondAttribute="trailing" constant="24" id="07M-Rb-cN4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aCQ-Rf-wfO" secondAttribute="bottom" id="6Lw-yk-buO"/>
+                            <constraint firstItem="5c0-N5-rle" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="FdH-6v-0mr"/>
+                            <constraint firstItem="5c0-N5-rle" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="WSg-X6-Rgu"/>
+                            <constraint firstItem="aCQ-Rf-wfO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Xlg-4p-IIo"/>
+                            <constraint firstItem="5c0-N5-rle" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="iUM-WF-yWi"/>
+                            <constraint firstItem="aCQ-Rf-wfO" firstAttribute="top" secondItem="5c0-N5-rle" secondAttribute="bottom" id="o9h-1S-gy0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" image="settings" landscapeImage="settings" largeContentSizeImage="settings" id="Bv7-nj-N9P"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="userSettingsTableView" destination="5c0-N5-rle" id="cwh-f4-Hak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

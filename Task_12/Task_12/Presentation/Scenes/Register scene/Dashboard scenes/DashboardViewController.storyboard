@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeBarViewController-->
+        <scene sceneID="g9m-g2-wyf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeBarViewController" referencedIdentifier="HomeBarViewController" id="yYD-vH-kVz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="7At-h2-NbX">
+                        <imageReference key="image" image="house.circle.fill" catalog="system" symbolScale="medium"/>
+                        <imageReference key="landscapeImage" image="house.circle.fill" catalog="system" symbolScale="medium"/>
+                        <color key="badgeColor" red="0.99953895807266235" green="0.9672737717628479" blue="0.0053495406173169613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBO-Dm-2Cx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1115" y="-76"/>
+        </scene>
+        <!--SettingsBarViewController-->
+        <scene sceneID="XAE-2S-oky">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsBarViewController" referencedIdentifier="SettingsBarViewController" id="qSP-2w-FN4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Setting" id="Tzd-ux-qZH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5r5-WI-btY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1115" y="506"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="DFk-eO-dzX">
+            <objects>
+                <tabBarController storyboardIdentifier="Dashboard_Tab_Bar" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Nlc-8b-BIJ" customClass="DashboardViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9WG-Zq-svE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <color key="selectedImageTintColor" red="0.96497172117233276" green="0.40895307064056396" blue="0.057624600827693939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yYD-vH-kVz" kind="relationship" relationship="viewControllers" id="b0T-qM-qHP"/>
+                        <segue destination="qSP-2w-FN4" kind="relationship" relationship="viewControllers" id="idL-Wj-0kM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTB-Hm-yZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="215"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
