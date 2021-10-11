@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="Y6W-OH-hqX" customClass="SearchViewController" customModule="Task_13_FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="   Search" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" background="b_Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="uXC-rQ-KSs">
+                                <rect key="frame" x="17" y="66" width="380" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="36Y-5N-Dxp"/>
+                                </constraints>
+                                <color key="textColor" red="0.09018407016992569" green="0.090203739702701569" blue="0.090179748833179474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uXC-rQ-KSs" secondAttribute="trailing" constant="17" id="7nq-6a-3RY"/>
+                            <constraint firstItem="uXC-rQ-KSs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="ERo-bS-UkW"/>
+                            <constraint firstItem="uXC-rQ-KSs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="22" id="U1h-EE-bzt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_search" landscapeImage="ic_search" largeContentSizeImage="ic_search" selectedImage="ic_search" id="zN3-wl-Agm"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="b_Rectangle" width="341" height="62"/>
+        <image name="ic_search" width="23" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

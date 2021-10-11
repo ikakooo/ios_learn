@@ -8,10 +8,13 @@
 import UIKit
 
 class PublishRecipeViewController: UIViewController {
-
+    @IBOutlet weak var foodPhoto: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let img = UIImage(named: "b_img") {
+            foodPhoto.backgroundColor = UIColor(patternImage: img)}
         // Do any additional setup after loading the view.
     }
     

@@ -16,6 +16,16 @@
             </objects>
             <point key="canvasLocation" x="862" y="-81"/>
         </scene>
+        <!--SearchViewController-->
+        <scene sceneID="7XZ-SD-W6o">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchViewController" storyboardName="SearchViewController" referencedIdentifier="SearchViewController" id="6ZM-DR-8St" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="yJL-jq-uuJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xy-lZ-cI4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="1"/>
+        </scene>
         <!--PublishRecipeViewController-->
         <scene sceneID="vAq-vS-6tP">
             <objects>
@@ -24,7 +34,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezO-R4-uZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="47"/>
+            <point key="canvasLocation" x="900" y="84"/>
         </scene>
         <!--ProfileViewController-->
         <scene sceneID="qkj-dG-bpX">
@@ -34,7 +44,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oeQ-eP-iba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="181"/>
+            <point key="canvasLocation" x="867" y="171"/>
         </scene>
         <!--FeedViewController-->
         <scene sceneID="xRW-J3-gYS">
@@ -44,7 +54,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hr8-6Z-pmu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="309"/>
+            <point key="canvasLocation" x="859" y="269"/>
         </scene>
         <!--Main Food Tab Bar Controller-->
         <scene sceneID="a1P-nG-THh">
@@ -54,12 +64,14 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nY9-n0-Hz4">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.9670751690864563" green="0.40747523307800293" blue="0.051338225603103638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="oVq-Ul-WzZ" kind="relationship" relationship="viewControllers" id="lai-P9-vNP"/>
-                        <segue destination="73D-Ff-P5p" kind="relationship" relationship="viewControllers" id="UE3-Ve-Vz1"/>
-                        <segue destination="05c-Nk-itu" kind="relationship" relationship="viewControllers" id="rv9-Eb-ybw"/>
-                        <segue destination="Z69-ET-xT9" kind="relationship" relationship="viewControllers" id="q4C-DR-4T8"/>
+                        <segue destination="6ZM-DR-8St" kind="relationship" relationship="viewControllers" id="z4T-Jf-yYW"/>
+                        <segue destination="73D-Ff-P5p" kind="relationship" relationship="viewControllers" id="j1t-Ng-KHo"/>
+                        <segue destination="05c-Nk-itu" kind="relationship" relationship="viewControllers" id="THB-p6-xOm"/>
+                        <segue destination="Z69-ET-xT9" kind="relationship" relationship="viewControllers" id="zOX-Zf-F5L"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6V-Mh-5yq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

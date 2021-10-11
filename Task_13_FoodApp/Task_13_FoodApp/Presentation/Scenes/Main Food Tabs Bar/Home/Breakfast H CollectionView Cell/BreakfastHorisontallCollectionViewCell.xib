@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="BreakfastHorisontallCollectionViewCell" reuseIdentifier="BreakfastHorisontallCollectionViewCell" id="gTV-IL-0wX" customClass="BreakfastHorisontallCollectionViewCell" customModule="Task_13_FoodApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_Breakfast_3" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-AP-N85">
+                        <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="166" id="Egg-dd-98R"/>
+                            <constraint firstAttribute="height" constant="166" id="Ztl-KP-9Ng"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brownie with almonds and melted chocolate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0S-4Z-VIg">
+                        <rect key="frame" x="0.0" y="177" width="166" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="166" id="8Mu-mU-fxw"/>
+                            <constraint firstAttribute="height" constant="43" id="Uzz-BO-hCh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="h2h-AP-N85" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="41g-Tn-Cpz"/>
+                <constraint firstItem="i0S-4Z-VIg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6vh-H4-2oh"/>
+                <constraint firstAttribute="trailing" secondItem="i0S-4Z-VIg" secondAttribute="trailing" id="OpA-Od-PSY"/>
+                <constraint firstItem="h2h-AP-N85" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VYh-g6-99a"/>
+                <constraint firstItem="i0S-4Z-VIg" firstAttribute="top" secondItem="h2h-AP-N85" secondAttribute="bottom" constant="11" id="Vwu-Zp-Hq9"/>
+                <constraint firstAttribute="bottom" secondItem="i0S-4Z-VIg" secondAttribute="bottom" id="fhH-Yh-7Xg"/>
+                <constraint firstAttribute="trailing" secondItem="h2h-AP-N85" secondAttribute="trailing" id="oC0-OH-19V"/>
+            </constraints>
+            <size key="customSize" width="166" height="220"/>
+            <connections>
+                <outlet property="foodImg" destination="h2h-AP-N85" id="Zlj-YD-uUU"/>
+                <outlet property="foodTitle" destination="i0S-4Z-VIg" id="3Ku-cm-2Ck"/>
+            </connections>
+            <point key="canvasLocation" x="-268.1159420289855" y="32.142857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_Breakfast_3" width="199" height="256"/>
+    </resources>
+</document>

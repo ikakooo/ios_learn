@@ -4,31 +4,120 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Publish Recipe View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="PublishRecipeViewController" id="Y6W-OH-hqX" customClass="PublishRecipeViewController" customModule="Task_13_FoodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLC-MP-gpw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1456"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUh-QO-upj" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publish recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUJ-WG-Uri">
+                                                <rect key="frame" x="16" y="0.0" width="261.5" height="56"/>
+                                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBJ-PZ-FE7">
+                                                <rect key="frame" x="16" y="62" width="230" height="1.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="2cu-P2-e3f"/>
+                                                    <constraint firstAttribute="height" constant="1.3" id="OMr-NB-VE8"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos and videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlZ-sF-HCH">
+                                                <rect key="frame" x="16" y="91.5" width="171.5" height="28"/>
+                                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_plus" highlightedImage="b_img" translatesAutoresizingMaskIntoConstraints="NO" id="Tpf-d1-L8r">
+                                                <rect key="frame" x="16" y="129.5" width="166" height="166"/>
+                                                <color key="backgroundColor" white="0.089999999999999997" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="166" id="8af-Ve-jjJ"/>
+                                                    <constraint firstAttribute="height" constant="166" id="iL0-lE-vhy"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfU-UZ-9qL">
+                                                <rect key="frame" x="16" y="328.5" width="45" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="  Apple pie" minimumFontSize="17" background="b_Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="qmL-Tz-8Dt">
+                                                <rect key="frame" x="16" y="360.5" width="382" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="SPK-UH-Vif"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="0zK-dF-OQY"/>
+                                            <constraint firstItem="BUJ-WG-Uri" firstAttribute="top" secondItem="BUh-QO-upj" secondAttribute="top" id="1Jn-um-Grg"/>
+                                            <constraint firstItem="WBJ-PZ-FE7" firstAttribute="leading" secondItem="BUh-QO-upj" secondAttribute="leading" constant="16" id="5l0-ax-usw"/>
+                                            <constraint firstItem="BUJ-WG-Uri" firstAttribute="leading" secondItem="BUh-QO-upj" secondAttribute="leading" constant="16" id="6ra-ZJ-TMV"/>
+                                            <constraint firstItem="Tpf-d1-L8r" firstAttribute="leading" secondItem="BUh-QO-upj" secondAttribute="leading" constant="16" id="ETu-hH-Y11"/>
+                                            <constraint firstItem="qmL-Tz-8Dt" firstAttribute="top" secondItem="vfU-UZ-9qL" secondAttribute="bottom" constant="11" id="H37-9p-9Y9"/>
+                                            <constraint firstItem="wlZ-sF-HCH" firstAttribute="leading" secondItem="BUh-QO-upj" secondAttribute="leading" constant="16" id="LVO-td-qLI"/>
+                                            <constraint firstItem="vfU-UZ-9qL" firstAttribute="leading" secondItem="BUh-QO-upj" secondAttribute="leading" constant="16" id="ali-he-IpM"/>
+                                            <constraint firstItem="qmL-Tz-8Dt" firstAttribute="leading" secondItem="BUh-QO-upj" secondAttribute="leading" constant="16" id="bTk-0s-Hci"/>
+                                            <constraint firstItem="WBJ-PZ-FE7" firstAttribute="top" secondItem="BUJ-WG-Uri" secondAttribute="bottom" constant="6" id="f96-hW-7Bs"/>
+                                            <constraint firstItem="vfU-UZ-9qL" firstAttribute="top" secondItem="Tpf-d1-L8r" secondAttribute="bottom" constant="33" id="gUQ-5U-O32"/>
+                                            <constraint firstAttribute="trailing" secondItem="qmL-Tz-8Dt" secondAttribute="trailing" constant="16" id="kEP-b8-uWl"/>
+                                            <constraint firstItem="Tpf-d1-L8r" firstAttribute="top" secondItem="wlZ-sF-HCH" secondAttribute="bottom" constant="10" id="mDc-85-kYn"/>
+                                            <constraint firstItem="wlZ-sF-HCH" firstAttribute="top" secondItem="WBJ-PZ-FE7" secondAttribute="bottom" constant="28" id="rPh-3V-U5E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97453790903091431" green="0.41439425945281982" blue="0.041835881769657135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BUh-QO-upj" firstAttribute="leading" secondItem="gLC-MP-gpw" secondAttribute="leading" id="3lO-tJ-kea"/>
+                                    <constraint firstItem="BUh-QO-upj" firstAttribute="top" secondItem="gLC-MP-gpw" secondAttribute="top" id="CHF-LJ-feM"/>
+                                    <constraint firstAttribute="trailing" secondItem="BUh-QO-upj" secondAttribute="trailing" id="X7C-a8-hoo"/>
+                                    <constraint firstAttribute="bottom" secondItem="BUh-QO-upj" secondAttribute="bottom" id="bzl-7R-dog"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gLC-MP-gpw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="2BJ-hF-d1R"/>
+                            <constraint firstItem="gLC-MP-gpw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6uX-fJ-2I9"/>
+                            <constraint firstItem="BUh-QO-upj" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="JgC-Fw-ljE"/>
+                            <constraint firstAttribute="bottom" secondItem="gLC-MP-gpw" secondAttribute="bottom" id="re0-fP-cW2"/>
+                            <constraint firstItem="gLC-MP-gpw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="w6u-n5-uef"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="RnI-QO-e8R"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_add_ecipe" landscapeImage="ic_add_ecipe" largeContentSizeImage="ic_add_ecipe" selectedImage="ic_add_ecipe" id="RnI-QO-e8R"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="foodPhoto" destination="Tpf-d1-L8r" id="Kcg-jP-GxL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="98"/>
+            <point key="canvasLocation" x="73.913043478260875" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="b_Rectangle" width="341" height="62"/>
+        <image name="b_img" width="166" height="166"/>
+        <image name="ic_add_ecipe" width="22" height="22"/>
+        <image name="ic_plus" width="48" height="48"/>
     </resources>
 </document>

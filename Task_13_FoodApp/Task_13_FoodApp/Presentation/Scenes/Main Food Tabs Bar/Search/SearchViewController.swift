@@ -1,5 +1,5 @@
 //
-//  MainFoodTabBarController.swift
+//  SearchViewController.swift
 //  Task_13_FoodApp
 //
 //  Created by MacBook Pro on 11.10.21.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class MainFoodTabBarController: UITabBarController {
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.unselectedItemTintColor = .black
+
         // Do any additional setup after loading the view.
     }
     
