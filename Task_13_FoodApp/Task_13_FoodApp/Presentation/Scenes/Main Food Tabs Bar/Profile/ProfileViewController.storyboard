@@ -15,8 +15,22 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="დრო არ მქონდა თორემ ამის მთილიანად დასრულების მაგარი მუღამი მაქვს :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-6b-8CJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="e1r-6b-8CJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6hM-Wn-y7V"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="e1r-6b-8CJ" secondAttribute="bottom" id="Awq-RK-SVo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="e1r-6b-8CJ" secondAttribute="trailing" id="DvG-g0-dix"/>
+                            <constraint firstItem="e1r-6b-8CJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="IxL-gn-Frg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ic_profile" landscapeImage="ic_profile" largeContentSizeImage="ic_profile" selectedImage="ic_profile" id="wSJ-kP-nLu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
