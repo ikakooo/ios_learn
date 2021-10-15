@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorites View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FavoritesViewController" id="Y6W-OH-hqX" customClass="FavoritesViewController" customModule="Task_13_FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jud-tF-bEB" userLabel="Favorite Food Table View">
+                                <rect key="frame" x="16" y="124" width="382" height="689"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FoodPostsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodPostsTableViewCell" rowHeight="521" id="99X-2a-jOr" userLabel="Food Posts Table View Cell" customClass="FoodPostsTableViewCell" customModule="Task_13_FoodApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="382" height="521"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="99X-2a-jOr" id="JCF-HK-bNc">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="521"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_profile_2" translatesAutoresizingMaskIntoConstraints="NO" id="rAy-UL-mCd">
+                                                    <rect key="frame" x="16" y="0.0" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="keY-es-q4P"/>
+                                                        <constraint firstAttribute="height" constant="32" id="uN9-xs-fc2"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eva Karlsson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uy-BM-uGW">
+                                                    <rect key="frame" x="62" y="3.5" width="119" height="25"/>
+                                                    <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_Food_Big_1" translatesAutoresizingMaskIntoConstraints="NO" id="cf9-FY-KVr">
+                                                    <rect key="frame" x="20" y="47" width="342" height="365.5"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTW-sf-ZxV">
+                                                    <rect key="frame" x="36" y="426.5" width="310" height="49.5"/>
+                                                    <string key="text">Brownie with almonds and melted
+chocolate </string>
+                                                    <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-kD-c5s">
+                                                    <rect key="frame" x="319.5" y="4" width="26.5" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="23.600000000000001" id="F3p-Yw-zFE"/>
+                                                        <constraint firstAttribute="width" constant="26.399999999999999" id="U2d-cQ-T2d"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="ic_heart"/>
+                                                    <connections>
+                                                        <action selector="onFavButtonClick:" destination="99X-2a-jOr" eventType="touchUpInside" id="k8l-Lz-eZV"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cf9-FY-KVr" firstAttribute="leading" secondItem="JCF-HK-bNc" secondAttribute="leadingMargin" id="2sW-vd-Jtr"/>
+                                                <constraint firstItem="cf9-FY-KVr" firstAttribute="top" secondItem="rAy-UL-mCd" secondAttribute="bottom" constant="15" id="2u8-EN-9jd"/>
+                                                <constraint firstItem="rAy-UL-mCd" firstAttribute="leading" secondItem="JCF-HK-bNc" secondAttribute="leading" constant="16" id="I39-4n-T0A"/>
+                                                <constraint firstItem="rAy-UL-mCd" firstAttribute="top" secondItem="JCF-HK-bNc" secondAttribute="top" id="JlI-Ml-EtA"/>
+                                                <constraint firstItem="NTW-sf-ZxV" firstAttribute="leading" secondItem="JCF-HK-bNc" secondAttribute="leadingMargin" constant="16" id="SQN-jw-Qof"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NTW-sf-ZxV" secondAttribute="bottom" constant="34" id="dGD-xE-1kM"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NTW-sf-ZxV" secondAttribute="trailing" constant="16" id="kuz-lB-DOq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cf9-FY-KVr" secondAttribute="trailing" id="lEk-pY-zOP"/>
+                                                <constraint firstItem="3uy-BM-uGW" firstAttribute="leading" secondItem="rAy-UL-mCd" secondAttribute="trailing" constant="14" id="q30-WX-EE9"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lp5-kD-c5s" secondAttribute="trailing" constant="36" id="rkX-h7-ny0"/>
+                                                <constraint firstItem="Lp5-kD-c5s" firstAttribute="centerY" secondItem="rAy-UL-mCd" secondAttribute="centerY" id="sWm-Ub-A6L"/>
+                                                <constraint firstItem="3uy-BM-uGW" firstAttribute="centerY" secondItem="rAy-UL-mCd" secondAttribute="centerY" id="uGB-6i-UVQ"/>
+                                                <constraint firstItem="NTW-sf-ZxV" firstAttribute="top" secondItem="cf9-FY-KVr" secondAttribute="bottom" constant="14" id="yVj-Je-w1Y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="personName" destination="3uy-BM-uGW" id="spp-1B-F5Z"/>
+                                            <outlet property="personProfilePhoto" destination="rAy-UL-mCd" id="Wr0-ha-djS"/>
+                                            <outlet property="postIsLoved" destination="Lp5-kD-c5s" id="0va-Er-RRw"/>
+                                            <outlet property="postMainIMG" destination="cf9-FY-KVr" id="srq-2E-9yO"/>
+                                            <outlet property="postTitle" destination="NTW-sf-ZxV" id="ViX-qi-m1J"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jp-HW-Lcn">
+                                <rect key="frame" x="18.5" y="44" width="164.5" height="50"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8Q-m0-s1o">
+                                <rect key="frame" x="18.5" y="100" width="160" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="UQD-fx-jVP"/>
+                                    <constraint firstAttribute="height" constant="1" id="Wwu-eL-YJN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d8Q-m0-s1o" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="18.5" id="6vc-hQ-IY4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Jud-tF-bEB" secondAttribute="trailing" constant="16" id="8v5-jU-mVJ"/>
+                            <constraint firstItem="d8Q-m0-s1o" firstAttribute="top" secondItem="5jp-HW-Lcn" secondAttribute="bottom" constant="6" id="AVi-Nt-arB"/>
+                            <constraint firstItem="Jud-tF-bEB" firstAttribute="top" secondItem="d8Q-m0-s1o" secondAttribute="bottom" constant="23" id="CGM-lC-V8U"/>
+                            <constraint firstItem="5jp-HW-Lcn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="FhQ-ue-VgI"/>
+                            <constraint firstItem="5jp-HW-Lcn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18.5" id="L75-yD-Xpm"/>
+                            <constraint firstItem="Jud-tF-bEB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="czp-5H-ene"/>
+                            <constraint firstItem="Jud-tF-bEB" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ug1-cS-zcP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_heart" landscapeImage="ic_heart" largeContentSizeImage="ic_heart" selectedImage="ic_heart" id="drN-ru-KAE"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="favoriteFoodTabel" destination="Jud-tF-bEB" id="k6Q-1c-dv4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_heart" width="27" height="24"/>
+        <image name="img_Food_Big_1" width="354" height="377.5"/>
+        <image name="p_profile_2" width="68" height="51"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -13,4 +13,5 @@ struct FoodPost {
     var personName:String
     var postTitle:String
     var isLoved:Bool
+    var foodID:Int = 0
 }

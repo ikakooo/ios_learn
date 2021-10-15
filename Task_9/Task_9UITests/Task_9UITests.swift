@@ -21,6 +21,19 @@ class Task_9UITests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testHdfsdhjfj()throws{
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        app.staticTexts["Main Page"].tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts[" Go To Next Page"]/*[[".buttons[\" Go To Next Page\"].staticTexts[\" Go To Next Page\"]",".staticTexts[\" Go To Next Page\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.textFields["ჩაწერე ტექსტი რომ გამოჩნდეს მეორე გვერდზე"].tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts[" Go To Back"]/*[[".buttons[\" Go To Back\"].staticTexts[\" Go To Back\"]",".staticTexts[\" Go To Back\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.staticTexts["dsfbhdsjfksdnkf"].tap()
+        
+        
+    }
 
     func testPassingDataBetweenPagesCorrectly() throws {
         // UI tests must launch the application that they test.

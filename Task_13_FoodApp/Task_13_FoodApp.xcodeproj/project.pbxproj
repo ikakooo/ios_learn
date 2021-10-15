@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BDA1B7D2718B542008AAA5F /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA1B7C2718B542008AAA5F /* FavoritesViewController.swift */; };
+		3BDA1B7F2718B55B008AAA5F /* FavoritesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDA1B7E2718B55B008AAA5F /* FavoritesViewController.storyboard */; };
+		3BDA1B872718CF96008AAA5F /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA1B862718CF96008AAA5F /* NotificationName+Extensions.swift */; };
+		3BDA1B892718EF2B008AAA5F /* UDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA1B882718EF2B008AAA5F /* UDManager.swift */; };
 		3BDE0E62271635AB00F8CD7F /* FoodPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE0E61271635AB00F8CD7F /* FoodPostsTableViewCell.swift */; };
 		3BDE0E652716363000F8CD7F /* FoodPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE0E642716363000F8CD7F /* FoodPost.swift */; };
 		3BE986452714390B007AC0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE986442714390B007AC0BA /* AppDelegate.swift */; };
@@ -51,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BDA1B7C2718B542008AAA5F /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		3BDA1B7E2718B55B008AAA5F /* FavoritesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesViewController.storyboard; sourceTree = "<group>"; };
+		3BDA1B862718CF96008AAA5F /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
+		3BDA1B882718EF2B008AAA5F /* UDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDManager.swift; sourceTree = "<group>"; };
 		3BDE0E61271635AB00F8CD7F /* FoodPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPostsTableViewCell.swift; sourceTree = "<group>"; };
 		3BDE0E642716363000F8CD7F /* FoodPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPost.swift; sourceTree = "<group>"; };
 		3BE986412714390B007AC0BA /* Task_13_FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task_13_FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +114,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BDA1B7B2718B4F6008AAA5F /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				3BDA1B7C2718B542008AAA5F /* FavoritesViewController.swift */,
+				3BDA1B7E2718B55B008AAA5F /* FavoritesViewController.storyboard */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		3BDA1B832718CE88008AAA5F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3BDA1B842718CF63008AAA5F /* Extensions */,
+				3BDA1B882718EF2B008AAA5F /* UDManager.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3BDA1B842718CF63008AAA5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BDA1B862718CF96008AAA5F /* NotificationName+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3BDE0E602716357200F8CD7F /* Food Posts Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				3BE9867727143A20007AC0BA /* App */,
+				3BDA1B832718CE88008AAA5F /* Infrastructure */,
 				3BE9867627143A06007AC0BA /* Presentation */,
 				3BE98675271439E9007AC0BA /* Resources */,
 				3BE986742714392C007AC0BA /* Supporting Files */,
@@ -217,6 +252,7 @@
 			children = (
 				3BE9867A27144D7A007AC0BA /* Main */,
 				3BE9868027144E26007AC0BA /* Home */,
+				3BDA1B7B2718B4F6008AAA5F /* Favorites */,
 				3BE9869527149EEC007AC0BA /* Search */,
 				3BE9868127144E99007AC0BA /* Publish Recipe */,
 				3BE9868227144ED6007AC0BA /* Feed */,
@@ -407,6 +443,7 @@
 				3BE9868C271450DC007AC0BA /* PublishRecipeViewController.storyboard in Resources */,
 				3BE986942714513F007AC0BA /* FeedViewController.storyboard in Resources */,
 				3BE9868727145093007AC0BA /* HomeViewController.storyboard in Resources */,
+				3BDA1B7F2718B55B008AAA5F /* FavoritesViewController.storyboard in Resources */,
 				3BE9869927149F29007AC0BA /* SearchViewController.storyboard in Resources */,
 				3BE986902714510A007AC0BA /* ProfileViewController.storyboard in Resources */,
 				3BE986512714390D007AC0BA /* LaunchScreen.storyboard in Resources */,
@@ -437,8 +474,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDA1B7D2718B542008AAA5F /* FavoritesViewController.swift in Sources */,
 				3BE9868E271450F9007AC0BA /* ProfileViewController.swift in Sources */,
 				3BE9869D2714B897007AC0BA /* BreakfastHorisontallCollectionViewCell.swift in Sources */,
+				3BDA1B892718EF2B008AAA5F /* UDManager.swift in Sources */,
 				3BE986452714390B007AC0BA /* AppDelegate.swift in Sources */,
 				3BE9869727149F1C007AC0BA /* SearchViewController.swift in Sources */,
 				3BE98689271450B9007AC0BA /* PublishRecipeViewController.swift in Sources */,
@@ -447,6 +486,7 @@
 				3BE986472714390B007AC0BA /* SceneDelegate.swift in Sources */,
 				3BE986A12714C3B6007AC0BA /* Breakfast.swift in Sources */,
 				3BE9868527145079007AC0BA /* HomeViewController.swift in Sources */,
+				3BDA1B872718CF96008AAA5F /* NotificationName+Extensions.swift in Sources */,
 				3BDE0E62271635AB00F8CD7F /* FoodPostsTableViewCell.swift in Sources */,
 				3BE9869227145120007AC0BA /* FeedViewController.swift in Sources */,
 			);
