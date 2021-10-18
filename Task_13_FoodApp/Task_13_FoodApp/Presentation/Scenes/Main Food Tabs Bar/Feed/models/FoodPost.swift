@@ -9,7 +9,9 @@ import Foundation
 
 struct FoodPost {
     var imgName:String
+    var imgNameURL:String
     var personProfileIMGName:String
+    var personProfileIMGNameURL:String
     var personName:String
     var postTitle:String
     var isLoved:Bool

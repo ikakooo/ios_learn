@@ -9,5 +9,6 @@ import Foundation
 
 struct Breakfast {
     var imgName:String
+    var imgNameURL:String
     var titleDescreption:String
 }

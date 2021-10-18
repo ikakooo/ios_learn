@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FoodPostsTableViewCell: UITableViewCell {
     @IBOutlet weak var postMainIMG: UIImageView!
@@ -25,8 +26,9 @@ class FoodPostsTableViewCell: UITableViewCell {
     //    }
     
     func configure (with:FoodPost){
+        loadIMGFromInternet(ImgURL:with.imgNameURL)
         post = with
-        postMainIMG.image = UIImage(named: with.imgName)
+        //postMainIMG.image = UIImage(named: with.imgName)
         personProfilePhoto.image = UIImage(named: with.personProfileIMGName)
         postTitle.text = with.postTitle
         personName.text = with.personName
@@ -66,6 +68,32 @@ class FoodPostsTableViewCell: UITableViewCell {
                     userInfo: ["favoriteFood": post]
                 )
                 UDManager.deleteFavoriteFoodID(favFoodPostID: post.foodID)
+            }
+        }
+    }
+    
+    
+    func loadIMGFromInternet(ImgURL:String){
+        let url = URL(string: ImgURL)
+        let processor = DownsamplingImageProcessor(size: postMainIMG.bounds.size)
+                     |> RoundCornerImageProcessor(cornerRadius: 20)
+        postMainIMG.kf.indicatorType = .activity
+        postMainIMG.kf.setImage(
+            with: url,
+            placeholder: UIImage(named: "img_day_food"),
+            options: [
+                .processor(processor),
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+        {
+            result in
+            switch result {
+            case .success(let value):
+                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+            case .failure(let error):
+                print("Job failed: \(error.localizedDescription)")
             }
         }
     }
